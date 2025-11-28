@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'doctor_citas.dart';
+import 'splash_screen.dart'; // Asegúrate de importar el SplashScreen
 
 void main() {
   runApp(const MyApp());
@@ -17,7 +18,7 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.blue),
         useMaterial3: true,
       ),
-      home: DoctorCitasPage(doctorId: 1), // ID del doctor
+      home: SplashScreen(), // Solo UN home, inicia con el SplashScreen
     );
   }
 }
